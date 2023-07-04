@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}{% load %}{% block title %}Acerca de{% endblock %}
+{%block background%}{%load static%}{%static 'core/img/about-bg.jpg'%}{%endblock%}
+{%block headers%}
+<h1>Víctor Rubia</h1>
+<span class="subheading">Biografía</span>
+{% endblock %} {% block content %}
+<div class='row'>
+  <div class="col-lg-3 col-md-4 offset-lg-1">
+    <img
+      class="img-fluid avatar"
+      src="{% static 'core/img/avatar.jpg' %}"
+      alt=""
+    />
+  </div>
+  <div class="col-lg-7 col-md-8">
+    <h2 class="section-heading">Víctor Rubia</h2>
+    <p>Estimados lectores,</p>
+    <p>
+      Soy Víctor, un español de 32 años actualmente en Francia. Tras años como cocinero, 
+    he descubierto mi verdadera pasión: la programación. Me siento atraído por su lenguaje del futuro y 
+    su capacidad para resolver problemas con creatividad. Mi objetivo es dedicarme por completo 
+    a este campo en constante evolución.
+    <p>Con una sólida formación culinaria, aporto una perspectiva 
+    única a la programación. Estoy emocionado por embarcarme en este nuevo capítulo y enfrentar los desafíos 
+    que el mundo digital me presente. Espero contribuir de manera innovadora y significativa a la tecnología.</p> 
+    
+    </p>
+    <p>Atentamente,</p>
+    <p>Víctor</p>
+  </div>
+</div>
+{% endblock %}
